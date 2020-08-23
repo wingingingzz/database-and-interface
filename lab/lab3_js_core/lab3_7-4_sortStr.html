@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <title>lab3_4.2</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var str = prompt("Please enter a string of words: ", "");
+            var words_arr = [];
+            words_arr = str.split(" "); //以space分隔，将string导入array
+            var len = words_arr.length;
+            //words_arr.sort(function(a, b){return a-b});//ascending order
+            //words_arr.sort(function(a, b){return b-a});//descending order
+            //words_arr.sort();
+            //words_arr.reverse();//descending order
+            for(var i=0; i<len; i++)
+            {
+                document.write(words_arr[i], " ");
+            }
+        </script>
+    </body>
+</html>

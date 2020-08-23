@@ -1,0 +1,86 @@
+/* my style.css */
+
+/*
+* {
+	color: blue;
+}
+*/
+
+.attention {
+	text-decoration: underline;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+h1.yellow {
+	text-align: center;
+	color: yellow;
+}
+
+h2 p { 
+	color: #FF00FF;
+	text-align: right;
+}
+
+p.major {
+	font-family: Arial, 'Times New Roman', Helvetica;
+	font-size: 3.1em;
+}
+p.minor {
+	font-style: italic;
+	font-weight: bold;
+}
+p.wide {
+	line-height: 2.0;
+}
+
+.attention {
+	text-decoration: underline;
+}
+
+#area52 {
+	color: green;
+}
+
+a:link {
+	letter-spacing: 2.0em;
+}
+
+a:hover {
+	font-weight: 900;
+	font-size: 50px;
+	color: yellow;
+}
+
+img {
+	float: right;
+}
+
+ul ol {
+	color: orange;
+}
+
+ul > ol {
+	color: purple;	
+}
+
+li:first-child {
+	text-decoration: underline;
+}
+
+li:last-child {
+	font-style: italic;
+}
+
+li:only-child {
+	font-weight: bold;
+}
+
+li:empty {
+	color: red;
+}
+
+		

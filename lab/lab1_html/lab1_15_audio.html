@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <title>lab1_15</title>
+    </head>
+    <body>
+        <h1>米津玄師 - Lemon</h1>
+        <embed height="50" width="100" src="audio/米津玄師 - Lemon.mp3" /><br />
+        <!--HTML5 标签，在 HTML4 中是非法的，但是所有浏览器中都有效-->
+
+        <object height="50" width="100" data="audio/米津玄師 - Lemon.mp3" ></object><br />
+        
+        <audio controls height="100" width="100">
+            <source src="audio/米津玄師 - Lemon.mp3" type="audio/mpeg" />
+            <source src="audio/米津玄師 - Lemon.ogg" type="audio/ogg" />
+            <embed height="50" width="100" src="audio/米津玄師 - Lemon.mp3" />
+        </audio>
+        <!--HTML5 <audio> 元素会尝试以 mp3 或 ogg 来播放音频。如果失败，代码将回退尝试 <embed> 元素。-->
+
+        <audio controls loop><!--循环播放-->
+            <source src="audio/米津玄師 - Lemon.mp3" type="audio/mpeg" />
+            <source src="audio/米津玄師 - Lemon.ogg" type="audio/ogg" />
+            您的浏览器不支持 audio 元素。
+        </audio> 
+    </body>
+</html>

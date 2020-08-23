@@ -1,0 +1,6 @@
+li.compact{background-color: pink;}
+li.midsize{background-color: blue;}
+li.sports{background-color: red;}
+
+ol.outer{list-style-type: upper-roman;}
+ol.middle{list-style-type: upper-alpha;}

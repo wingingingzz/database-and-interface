@@ -1,0 +1,899 @@
+<!----------------------------------- Example #1 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Grumpy Cat! </title>
+	</head>
+	<body>
+		<p>This paragraph has no style.</p>
+		<p style = "font-family : Arial, 'Times New Roman', Helvetica; font-size : 3.1em;">
+			This paragraph has style.
+		</p>
+		<p style = "font-style : italic; font-weight : bold;">This paragraph also has style.</p>		
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #2 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> CSS Style! </title>
+		<style type = "text/css">			p.major {
+				font-family: Arial, 'Times New Roman', Helvetica;
+				font-size: 3.1em;			}			p.minor {
+				font-style : italic;
+				font-weight : bold;
+			}
+			/* css comments go here */		</style>
+	</head>
+	<body>
+		<p>This paragraph has no style.</p>
+		<p class = "major">This paragraph has style.</p>
+		<p class = "minor">This paragraph also has style.</p>		
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #3 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> CSS Style! </title>
+		<style type = "text/css">
+			* {
+				font-family: Arial;
+				font-size: 1.5em;
+			}
+			/* css comments go here */		</style>
+	</head>
+	<body>
+		<p>This paragraph has style.</p>
+		<p style = "font-family : 'Times New Roman';">This paragraph the style that has been overridden.</p>		
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #4 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> CSS External Style! </title>
+		<link rel = "stylesheet" type = "text/css" href = "mystyle.css">
+	</head>
+	<body>
+		<p>This paragraph has no style.</p>
+		<p class = "major">This paragraph has style.</p>
+		<p class = "minor">This paragraph also has style.</p>		
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #5 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> The X-Files! </title>
+		<link rel = "stylesheet" type = "text/css" href = "mystyle.css">
+	</head>
+	<body>
+		<h1> The X-Files </h1>
+		<h2 id = "area52">
+			The truth is out there! 
+			<p>The X-Files is an American science fiction drama television series.</p>
+		</h2> 
+		<p><img src ="thexfiles.jpg" / >The original television series aired from September 10, 1993 to May 19, 2002 on Fox. The program spanned nine seasons, with 202 episodes. A short tenth season consisting of six episodes premiered on January 24, 2016, and concluded on February 22, 2016. Following the ratings success of this revival, Fox announced in April 2017 that The X-Files would be returning for an eleventh season of ten episodes. The season premiered on January 3, 2018, concluding on March 21, 2018. </p>
+		<p class = "major" style = "text-indent: 1em;">In addition to the television series, two feature films have been released: The 1998 film The X-Files, which took place as part of the TV series continuity, and the stand-alone film 		
+		</p>
+		<p class = "minor">The X-Files: I Want to Believe, released in 2008, six years after the original television run had ended.</p>	
+		<p class = "wide">The series revolves around Federal Bureau of Investigation (FBI) special agents Fox Mulder (David Duchovny), and Dana Scully (Gillian Anderson) who investigate X-Files: marginalized, unsolved cases involving paranormal phenomena. Mulder believes in the existence of aliens and the paranormal while Scully, a medical doctor and a skeptic, is assigned to scientifically analyze Mulder's discoveries, offer alternate rational theories to his work, and thus return him to mainstream cases.</p>
+		<p> This is <span class = "attention">very</span> important, please <a href ="">click!</a> </p><br><br><br><br><br><br>
+
+	Reference: 
+	<ul>
+		<li style = "list-style-type: square;">
+			https://en.wikipedia.org/wiki/The_X-Files
+		</li>
+		<li>
+			https://en.wikipedia.org/wiki/The_X-Files_(franchise)
+		</li>	
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #6 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			ul > li {
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+	<ol>
+		<li>The cat or domestic cat (Felis catus) is a small carnivorous mammal.[1][2]</li>
+		<li>It is the only domesticated species in the family Felidae.[4] </li>
+		<li>The cat is either:
+		<ul>
+			<li> a house cat, kept as a pet; or </li>
+			<li>a feral cat, freely ranging and avoiding human contact.[5] </li>
+		</ul>
+		<li>A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[6]</li>
+	</ol>
+
+
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #7 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			ul li {
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+	<ol>
+		<li>The cat or domestic cat (Felis catus) is a small carnivorous mammal.[1][2]</li>
+		<li>It is the only domesticated species in the family Felidae.[4] </li>
+		<li>The cat is either:
+		<ul>
+			<li> a house cat, kept as a pet; or </li>
+			<li>a feral cat, freely ranging and avoiding human contact.[5] </li>
+		</ul>
+		<li>A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[6]</li>
+	</ol>
+
+
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #8 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			ol li {
+				color: blue;
+			}
+			ol > li {
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+	<ol>
+		<li>The cat or domestic cat (Felis catus) is a small carnivorous mammal.[1][2]</li>
+		<li>It is the only domesticated species in the family Felidae.[4] </li>
+		<li>The cat is either:
+		<ul>
+			<li> a house cat, kept as a pet; or </li>
+			<li>a feral cat, freely ranging and avoiding human contact.[5] </li>
+		</ul>
+		<li>A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[6]</li>
+	</ol>
+
+
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #9 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> CSS External Style! </title>
+		<link rel = "stylesheet" type = "text/css" href = "mystyle.css">
+	</head>
+	<body>
+		<ul>
+			<li>Item 1</li>
+			<ol>
+				<li>Item 1.1</li>
+				<ol>
+					<li>Item 1.1.1</li>
+					<li>Item 1.1.2</li>
+					<li>Item 1.1.3</li>
+				</ol>
+				<li>Item 1.2</li>
+				<li>Item 1.3</li>
+			</ol>
+			<li>Item 2</li>
+			<ol>
+				<li>Item 2.1</li>
+			</ol>
+			<li>Item 3</li>
+			<ul>
+				<li>Item 3.1</li>
+			</ul>
+			<li></li>
+			<li style = "list-style-image: url('star_small.jpg')"></li>
+		</ul>	
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #10 ----------------------------------->
+<!--
+<!DOCTYPE html>
+	<head>
+		<title> Questions </title>
+	</head>
+	<body>
+		<p> Note: There is no font called Arials (the correct name is Arial) </p>
+		<p style = "Font: bold 1.1em Arials, 'comic sans MS'">Table Border and Space</p>
+		<table border = "1">
+			<tr> 
+				<td> aaa aaa </td>
+			</tr>
+			<tr>
+				<td> aaa&nbsp;aaa </td>
+			</tr>
+			<tr>
+				<td> aaa&nbsp;&nbsp;aaa </td>
+			</tr>
+		</table>
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #11 ----------------------------------->
+<!--
+<!DOCTYPE html>
+	<head>
+		<title> Questions </title>
+	</head>
+	<body>
+		<p> Note: There is a font type called Arial </p>
+		<p style = "Font: bold 1.1em Arial, 'comic sans MS'">Table Border and Space</p>
+		<table border = "1">
+			<tr> 
+				<td> aaa aaa </td>
+			</tr>
+			<tr>
+				<td> aaa&nbsp;aaa </td>
+			</tr>
+			<tr>
+				<td> aaa&nbsp;&nbsp;aaa </td>
+			</tr>
+		</table>
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #12 ----------------------------------->
+<!--
+<!DOCTYPE html>
+	<head>
+		<title> Questions </title>
+	</head>
+	<body>
+		<p> Note: There is no font called Arials (the correct name is Arial) </p>
+		<p> It should have been Times News Roman but without comma it&apos;s an error and therefore skipped to the last font </p>
+		<p style = "Font: bold 1.1em Arials 'Time News Roman' 'comic sans MS'">Table Border and Space</p>
+		<table border = "1">
+			<tr> 
+				<td> aaa aaa </td>
+			</tr>
+			<tr>
+				<td> aaa&nbsp;aaa </td>
+			</tr>
+			<tr>
+				<td> aaa&nbsp;&nbsp;aaa </td>
+			</tr>
+		</table>
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #13 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			ul {
+				list-style-image: url('big.jpg');
+			}
+		</style>
+	</head>
+	<body>
+	<ol>
+		<li>The cat or domestic cat (Felis catus) is a small carnivorous mammal.[1][2]</li>
+		<li>It is the only domesticated species in the family Felidae.[4] </li>
+		<li>The cat is either:
+		<ul>
+			<li>a house cat, kept as a pet; or </li>
+			<li>a feral cat, freely ranging and avoiding human contact.[5] </li>
+		</ul>
+		<li>A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[6]</li>
+	</ol>
+
+
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #14 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			ul {
+				list-style-image: url('small.jpg');
+			}
+		</style>
+	</head>
+	<body>
+	<ol>
+		<li>The cat or domestic cat (Felis catus) is a small carnivorous mammal.[1][2]</li>
+		<li>It is the only domesticated species in the family Felidae.[4] </li>
+		<li>The cat is either:
+		<ul>
+			<li>a house cat, kept as a pet; or </li>
+			<li>a feral cat, freely ranging and avoiding human contact.[5] </li>
+		</ul>
+		<li>A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[6]</li>
+	</ol>
+
+
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #15 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			ul li {
+				list-style: none; 
+				/* use image as background instead of list style */
+				background-image: url('small.jpg');
+				/* image appears right under the text in that row */
+				background-repeat: no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<ol>
+			<li>The cat or domestic cat (Felis catus) is a small carnivorous mammal.[1][2]</li>
+			<li>It is the only domesticated species in the family Felidae.[4] </li>
+			<li>The cat is either:
+			<ul>
+				<li>a house cat, kept as a pet; or </li>
+				<li>a feral cat, freely ranging and avoiding human contact.[5] </li>
+			</ul>
+			<li>A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[6]</li>
+		</ol>
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #16 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			ul li {
+				margin-left:-40px;
+				/* lose the indentation of bullet points */
+				list-style: none; 
+				/* use image as background instead of list style */
+				background-image: url('small.jpg');
+				/* image appears right under the text in that row */
+				background-repeat: no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<ol>
+			<li>The cat or domestic cat (Felis catus) is a small carnivorous mammal.[1][2]</li>
+			<li>It is the only domesticated species in the family Felidae.[4] </li>
+			<li>The cat is either:
+			<ul>
+				<li>a house cat, kept as a pet; or </li>
+				<li>a feral cat, freely ranging and avoiding human contact.[5] </li>
+			</ul>
+			<li>A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[6]</li>
+		</ol>
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #17 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			ul li {
+				margin-left:-40px;
+				/* lose the indentation of bullet points */
+				padding-left: 50px;
+				/* add padding to the text */
+				list-style: none; 
+				/* use image as background instead of list style */
+				background-image: url('small.jpg');
+				/* image appears right under the text in that row */
+				background-repeat: no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<ol>
+			<li>The cat or domestic cat (Felis catus) is a small carnivorous mammal.[1][2]</li>
+			<li>It is the only domesticated species in the family Felidae.[4] </li>
+			<li>The cat is either:
+			<ul>
+				<li>a house cat, kept as a pet; or </li>
+				<li>a feral cat, freely ranging and avoiding human contact.[5] </li>
+			</ul>
+			<li>A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[6]</li>
+		</ol>
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #18 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			ul li {
+				margin-left:-40px;
+				/* lose the indentation of bullet points */
+				padding-left: 40px;
+				/* add padding to the text */
+				list-style: none; 
+				/* use image as background instead of list style */
+				background-image: url('small.jpg');
+				/* image appears right under the text in that row */
+				background-repeat: no-repeat;
+				background-size: 28px;
+				/* adjust image size */
+			}
+		</style>
+	</head>
+	<body>
+		<ol>
+			<li>The cat or domestic cat (Felis catus) is a small carnivorous mammal.[1][2]</li>
+			<li>It is the only domesticated species in the family Felidae.[4] </li>
+			<li>The cat is either:
+			<ul>
+				<li>a house cat, kept as a pet; or </li>
+				<li>a feral cat, freely ranging and avoiding human contact.[5] </li>
+			</ul>
+			<li>A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[6]</li>
+		</ol>
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #19 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			ul {
+				margin-left:-40px;
+				/* lose the indentation of bullet points */
+				padding-left: 40px;
+				/* add padding to the text */
+				list-style: none; 
+				/* use image as background instead of list style */
+				background-image: url('small.jpg');
+				/* image appears right under the text in that row */
+				background-repeat: no-repeat;
+				background-size: 28px;
+				/* adjust image size */
+			}
+		</style>
+	</head>
+	<body>
+		<ol>
+			<li>The cat or domestic cat (Felis catus) is a small carnivorous mammal.[1][2]</li>
+			<li>It is the only domesticated species in the family Felidae.[4] </li>
+			<li>The cat is either:
+			<ul>
+				<li>a house cat, kept as a pet; or </li>
+				<li>a feral cat, freely ranging and avoiding human contact.[5] </li>
+			</ul>
+			<li>A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[6]</li>
+		</ol>
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #20 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			li {
+				margin-left:-40px;
+				/* lose the indentation of bullet points */
+				padding-left: 40px;
+				/* add padding to the text */
+				list-style: none; 
+				/* use image as background instead of list style */
+				background-image: url('small.jpg');
+				/* image appears right under the text in that row */
+				background-repeat: no-repeat;
+				background-size: 28px;
+				/* adjust image size */
+			}
+		</style>
+	</head>
+	<body>
+		<ol>
+			<li>The cat or domestic cat (Felis catus) is a small carnivorous mammal.[1][2]</li>
+			<li>It is the only domesticated species in the family Felidae.[4] </li>
+			<li>The cat is either:
+			<ul>
+				<li>a house cat, kept as a pet; or </li>
+				<li>a feral cat, freely ranging and avoiding human contact.[5] </li>
+			</ul>
+			<li>A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[6]</li>
+		</ol>
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #21 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			ol {
+				margin-left:-40px;
+				/* lose the indentation of bullet points */
+				/* don’t see the image right??? see next example */
+				padding-left: 40px;
+				/* add padding to the text */
+				list-style: none; 
+				/* use image as background instead of list style */
+				background-image: url('small.jpg');
+				/* image appears right under the text in that row */
+				background-repeat: no-repeat;
+				background-size: 28px;
+				/* adjust image size */
+			}
+		</style>
+	</head>
+	<body>
+		<ol>
+			<li>The cat or domestic cat (Felis catus) is a small carnivorous mammal.[1][2]</li>
+			<li>It is the only domesticated species in the family Felidae.[4] </li>
+			<li>The cat is either:
+			<ul>
+				<li>a house cat, kept as a pet; or </li>
+				<li>a feral cat, freely ranging and avoiding human contact.[5] </li>
+			</ul>
+			<li>A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[6]</li>
+		</ol>
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #22 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			ol {
+				/* margin-left:-40px; */
+				/* lose the indentation of bullet points */
+				/* don’t see the image right??? see next example */
+				padding-left: 40px;
+				/* add padding to the text */
+				list-style: none; 
+				/* use image as background instead of list style */
+				background-image: url('small.jpg');
+				/* image appears right under the text in that row */
+				background-repeat: no-repeat;
+				background-size: 28px;
+				/* adjust image size */
+			}
+		</style>
+	</head>
+	<body>
+		<ol>
+			<li>The cat or domestic cat (Felis catus) is a small carnivorous mammal.[1][2]</li>
+			<li>It is the only domesticated species in the family Felidae.[4] </li>
+			<li>The cat is either:
+			<ul>
+				<li>a house cat, kept as a pet; or </li>
+				<li>a feral cat, freely ranging and avoiding human contact.[5] </li>
+			</ul>
+			<li>A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[6]</li>
+		</ol>
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #23 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			.red {
+				color: red;
+			}
+			.yellow {
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<p class = "red">Hey</p>
+		<p> you </p>
+		<table>
+			<tr>
+				<td class = "red">1</td>
+				<td class = "yellow">2</td>
+			</tr>
+		</table>
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #24 ----------------------------------->
+<!--
+<!DOCTYPE html>
+	<head>
+		<title> CSS Style! </title>
+		<style type = "text/css">			table.basic {
+				background-image: url('grumpy.jpg');
+				background-size: cover;			}	
+			table.margin {
+				background-image: url('grumpy.jpg');
+				background-size: cover;
+				margin:15px;			}
+			table.padding {
+				background-image: url('grumpy.jpg');
+				background-size: cover;
+				padding: 30px;			}				</style>
+	</head>
+	<body>
+		<p>
+		<table class = "basic">
+			<tr>
+				<th>R1C1</th>
+				<th>R1C2</th>
+				<th>R1C3</th>
+				<th>R1C4</th>
+			</tr>
+			<tr>
+				<th>R2C1</th>
+				<td>R2C2</td>
+				<td>R2C3</td>
+				<td>R2C4</td>
+			</tr>
+			<tr>
+				<th>R3C1</th>
+				<td>R3C2</td>
+				<td>R3C3</td>
+				<td>R3C4</td>
+			</tr>
+			<tr>
+				<th>R4C1</th>
+				<td>R4C2</td>
+				<td>R4C3</td>
+				<td>R4C4</td>
+			</tr>
+			<tr>
+				<th>R5C1</th>
+				<td>R5C2</td>
+				<td>R5C3</td>
+				<td>R5C4</td>
+			</tr>
+			<tr>
+				<th>R6C1</th>
+				<td>R6C2</td>
+				<td>R6C3</td>
+				<td>R6C4</td>
+			</tr>
+			<tr>
+				<th>R7C1</th>
+				<td>R7C2</td>
+				<td>R7C3</td>
+				<td>R7C4</td>
+			</tr>
+			<tr>
+				<th>R8C1</th>
+				<td>R8C2</td>
+				<td>R8C3</td>
+				<td>R8C4</td>
+			</tr>
+			<tr>
+				<th>R9C1</th>
+				<td>R9C2</td>
+				<td>R9C3</td>
+				<td>R9C4</td>
+			</tr>
+			<tr>
+				<th>R10C1</th>
+				<td>R10C2</td>
+				<td>R10C3</td>
+				<td>R10C4</td>
+			</tr>
+		</table>
+
+		<table class = "margin">
+			<tr>
+				<th>R1C1</th>
+				<th>R1C2</th>
+				<th>R1C3</th>
+				<th>R1C4</th>
+			</tr>
+			<tr>
+				<th>R2C1</th>
+				<td>R2C2</td>
+				<td>R2C3</td>
+				<td>R2C4</td>
+			</tr>
+			<tr>
+				<th>R3C1</th>
+				<td>R3C2</td>
+				<td>R3C3</td>
+				<td>R3C4</td>
+			</tr>
+			<tr>
+				<th>R4C1</th>
+				<td>R4C2</td>
+				<td>R4C3</td>
+				<td>R4C4</td>
+			</tr>
+			<tr>
+				<th>R5C1</th>
+				<td>R5C2</td>
+				<td>R5C3</td>
+				<td>R5C4</td>
+			</tr>
+			<tr>
+				<th>R6C1</th>
+				<td>R6C2</td>
+				<td>R6C3</td>
+				<td>R6C4</td>
+			</tr>
+			<tr>
+				<th>R7C1</th>
+				<td>R7C2</td>
+				<td>R7C3</td>
+				<td>R7C4</td>
+			</tr>
+			<tr>
+				<th>R8C1</th>
+				<td>R8C2</td>
+				<td>R8C3</td>
+				<td>R8C4</td>
+			</tr>
+			<tr>
+				<th>R9C1</th>
+				<td>R9C2</td>
+				<td>R9C3</td>
+				<td>R9C4</td>
+			</tr>
+			<tr>
+				<th>R10C1</th>
+				<td>R10C2</td>
+				<td>R10C3</td>
+				<td>R10C4</td>
+			</tr>
+		</table>
+
+		<table class = "padding">
+			<tr>
+				<th>R1C1</th>
+				<th>R1C2</th>
+				<th>R1C3</th>
+				<th>R1C4</th>
+			</tr>
+			<tr>
+				<th>R2C1</th>
+				<td>R2C2</td>
+				<td>R2C3</td>
+				<td>R2C4</td>
+			</tr>
+			<tr>
+				<th>R3C1</th>
+				<td>R3C2</td>
+				<td>R3C3</td>
+				<td>R3C4</td>
+			</tr>
+			<tr>
+				<th>R4C1</th>
+				<td>R4C2</td>
+				<td>R4C3</td>
+				<td>R4C4</td>
+			</tr>
+			<tr>
+				<th>R5C1</th>
+				<td>R5C2</td>
+				<td>R5C3</td>
+				<td>R5C4</td>
+			</tr>
+			<tr>
+				<th>R6C1</th>
+				<td>R6C2</td>
+				<td>R6C3</td>
+				<td>R6C4</td>
+			</tr>
+			<tr>
+				<th>R7C1</th>
+				<td>R7C2</td>
+				<td>R7C3</td>
+				<td>R7C4</td>
+			</tr>
+			<tr>
+				<th>R8C1</th>
+				<td>R8C2</td>
+				<td>R8C3</td>
+				<td>R8C4</td>
+			</tr>
+			<tr>
+				<th>R9C1</th>
+				<td>R9C2</td>
+				<td>R9C3</td>
+				<td>R9C4</td>
+			</tr>
+			<tr>
+				<th>R10C1</th>
+				<td>R10C2</td>
+				<td>R10C3</td>
+				<td>R10C4</td>
+			</tr>
+		</table>
+		</p>		
+	</body>
+</html>
+-->

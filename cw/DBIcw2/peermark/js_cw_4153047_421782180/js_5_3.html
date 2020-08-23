@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title> Exercise 5.3 </title>
+        <meta charset = "utf-8" />
+        <script type = "text/javascript">
+            "use strict";
+
+            window.addEventListener("load", init);
+
+            function init() {
+                document.getElementById("submit").addEventListener("click", popSubmissionAlert);
+            }
+
+            var chooseApple = false;
+            var chooseOrange = false;
+            var chooseBanana = false;
+
+            var total = 0;
+
+            function choice(choice) 
+            {
+                switch (choice) {
+                    case 1:
+                        if(document.getElementById("apple").checked) {
+                            chooseApple = true;
+                        } else {
+                            chooseApple = false;
+                        }
+                        popAlert();
+                        break;
+
+                    case 2:
+                        if(document.getElementById("orange").checked) {
+                            chooseOrange = true;
+                        } else {
+                            chooseOrange = false;
+                        }
+                        popAlert();
+                        break;
+                
+                    case 3:
+                        if(document.getElementById("banana").checked) {
+                            chooseBanana = true;
+                        } else {
+                            chooseBanana = false;
+                        }
+                        popAlert();
+                        break;
+
+                    default:
+                        break;
+                }
+                return;
+            }
+
+            function popAlert()
+            {
+                var msg = "You have selected:\n";
+                if (chooseApple) {
+                    total += 59;
+                    msg += "Apple      59 cents\n";
+                }
+                if (chooseOrange) {
+                    total += 49;
+                    msg += "Orange    49 cents\n";
+                }
+                if (chooseBanana) {
+                    total += 39;
+                    msg += "Banana    39 cents\n";
+                }   
+                msg += "             -------------\n"
+                msg += "Total:       " + total + " cents"
+                if(!chooseApple && !chooseOrange && !chooseBanana)
+                    alert("You have not selected any fruits");
+                else
+                    alert (msg);
+                clearAll();
+            }
+
+            function popSubmissionAlert()
+            {
+                var msg = "Your total cost is $";
+                if (chooseApple) {
+                    total += 59;
+                }
+                if (chooseOrange) {
+                    total += 49;
+                }
+                if (chooseBanana) {
+                    total += 39;
+                }   
+                msg += total * 1.05 / 100;
+                if(!chooseApple && !chooseOrange && !chooseBanana)
+                    alert("You have not selected any fruits");
+                else
+                    alert (msg);
+                clearAll();
+            }
+
+            function clearAll() {
+                total = 0;
+            }
+
+        </script>
+    </head>
+    <body>
+        Select fruit(s):
+        <form id = "form">
+            <label> <input type = "checkbox" id = "apple" value = "apple" onclick = "choice(1)" />
+               Apple &nbsp; (59 cents each).
+            </label>
+            <br>
+            <label><input type = "checkbox" id = "orange" value = "orange" onclick = "choice(2)" />
+                Orange (49 cents each).
+            </label>
+            <br>
+            <label> <input type = "checkbox" id = "banana" value = "banana" onclick = "choice(3)" />
+                Banana (39 cents each).
+            </label>
+            <br>
+            <input type = "button" id = "submit" value = "Submit" />
+        </form>
+    </body>
+</html>

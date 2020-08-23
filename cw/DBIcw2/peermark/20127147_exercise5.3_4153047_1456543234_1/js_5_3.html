@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 5.3</title>
+
+</head>
+<body>
+
+<form id="form">
+
+    <label>Select fruits(s):</label>
+    <br/>
+
+    <label>
+        <input type="checkbox" name="apple"  onclick="jisuan()" />
+        Apple&nbsp&nbsp&nbsp(59 cents each).
+    </label>
+    <br/>
+
+    <label>
+        <input type="checkbox" name="orange"  onclick="jisuan()" />
+        Orange (49 cents each).
+    </label>
+    <br/>
+
+    <label>
+        <input type="checkbox" name="banana"  onclick="jisuan()" />
+        Banana (39 cents each).
+    </label>
+    <br/>
+
+    <label>
+        <input type="button" value="submit" name="sm" />
+    </label>
+
+</form>
+
+<script type="text/javascript">
+    var cost=0;
+    var dom2=document.getElementById("form");
+    dom2.sm.onclick=totalcost;
+
+
+    function totalcost()
+    {
+        var final=cost*0.01*1.05;
+        alert("Your total cost is $"+ final);
+    }
+
+    function jisuan(){
+        var dom=document.getElementById("form");
+        cost=0;
+         if(dom.apple.checked)
+         {
+             cost=cost+59;
+         }
+         if(dom.orange.checked)
+         {
+             cost=cost+49;
+         }
+         if(dom.banana.checked)
+         {
+             cost=cost+39;
+         }
+
+         if (dom.apple.checked)
+         {
+             if (dom.orange.checked)
+             {
+                 if(dom.banana.checked)
+                 {
+                     alert("You have selected:\nApple       59 cents\nOrange    49 cents\nBanana    39 cents\nTotal:        "+cost+" cents");
+                 }
+                 else
+                 {
+                     alert("You have selected:\nApple       59 cents\nOrange    49 cents\nTotal:        "+cost+" cents");
+                 }
+             }
+
+             else if (dom.banana.checked)
+             {
+                 alert("You have selected:\nApple       59 cents\nBanana    39 cents\nTotal:        "+cost+" cents");
+             }
+             else
+             {
+                 alert("You have selected:\nApple       59 cents\nTotal:        "+cost+" cents");
+             }
+         }
+         else if (dom.orange.checked)
+         {
+             if (dom.banana.checked)
+             {
+                 alert("You have selected:\nOrange    49 cents\nBanana    39 cents\nTotal:        "+cost+" cents");
+             }
+             else
+             {
+                 alert("You have selected:\nOrange    49 cents\nTotal:        "+cost+" cents");
+             }
+         }
+         else if(dom.banana.checked)
+         {
+             alert("You have selected:\nBanana    39 cents\nTotal:        "+cost+" cents");
+         }
+         else
+         {
+             alert("You have not selected any fruits");
+         }
+
+    }
+</script>
+</body>
+</html>

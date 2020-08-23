@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <title>lab1_14</title>
+    </head>
+    <body>
+        <form action = "" method = "GET"><!--form tag 在 p tag 外面-->
+            <p>
+                User's Name: <input type="text" name="txtName" placeholder="Please enter your full name." /><br /><br />
+                <!--placeholder 属性规定可描述输入 <input> 字段预期值的简短的提示信息 。-->
+
+                <!--你可以使用 <label> 元素来定义 <input> 元素的标注。-->
+                <label><input type="checkbox" name="chkBulb" value="4light" checked="checked" />Four 25-watt light bulbs for $2.39</label><br />
+                <!--checked 属性规定在页面加载时应该被预先选定的 <input> 元素。 (只针对 type="checkbox" 或者 type="radio")-->
+                <label><input type="checkbox" name="chkBulb" value="8light" />Eight 25-watt light bulbs for $4.29</label><br />
+                <label><input type="checkbox" name="chkBulb" value="4lifelong" />Four 25-watt life-long bulbs for $3.95</label><br />
+                <label><input type="checkbox" name="chkBulb" value="8lifelong" />Four 25-watt life-long bulbs for $3.95</label><br /><br />
+                
+                <label><input type="radio" name="credit" value="Visa" checked="checked" />Visa</label><br />
+                <label><input type="radio" name="credit" value="Master" />Master Card</label><br />
+                <label><input type="radio" name="credit" value="Discover" />Discover</label><br />
+                <!--对于 "checkbox"、"radio"、"image" 类型 - 定义与 input 元素相关的值，当提交表单时该值会发送到表单的 action URL。-->
+                <!--对于 "button"、"reset"、"submit" 类型 - 定义按钮上的文本-->
+                <!--对于 "text"、"password"、"hidden" 类型 - 定义输入字段的初始（默认）值-->
+            </p>
+        </form>
+    </body>
+</html>

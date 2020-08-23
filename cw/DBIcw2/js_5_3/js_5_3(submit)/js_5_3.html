@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Exercise 5.3 </title>
+        <meta charset = "utf-8" />
+        <script type = "text/javascript">
+            var apple = 0, orange = 0, banana = 0;
+
+            function fruitPrice()
+            {
+                if(document.getElementById("apple").checked)
+                {
+                    apple = 1;
+                }
+                else
+                {
+                    apple = 0;
+                }
+                if(document.getElementById("orange").checked)
+                {
+                    orange = 1;
+                }
+                else
+                {
+                    orange = 0;
+                }
+                if(document.getElementById("banana").checked)
+                {
+                    banana = 1;
+                }
+                else
+                {
+                    banana = 0;
+                }
+
+                var total = 0;
+                total = apple * 59 + orange * 49 + banana * 39;
+
+                if(apple == 1 && orange == 0 && banana == 0)
+                {
+                    alert("You have selected:\n" + "Apple    59 cents\n" + "Total:    " + total + " cents");
+                }
+                else if(apple == 0 && orange == 1 && banana == 0)
+                {
+                    alert("You have selected:\n" + "Orange   49 cents\n" + "Total:    " + total + " cents");
+                }
+                else if(apple == 0 && orange == 0 && banana == 1)
+                {
+                    alert("You have selected:\n" + "Banana   39 cents\n" + "Total:    " + total + " cents");
+                }
+                else if(apple == 1 && orange == 1 && banana == 0)
+                {
+                    alert("You have selected:\n" + "Apple    59 cents\n" + "Orange   49 cents\n" + "Total:    " + total + " cents");
+                }
+                else if(apple == 1 && orange == 0 && banana == 1)
+                {
+                    alert("You have selected:\n" + "Apple    59 cents\n" + "Banana   39 cents\n" + "Total:    " + total + " cents");
+                }
+                else if(apple == 0 && orange == 1 && banana == 1)
+                {
+                    alert("You have selected:\n" + "Orange   49 cents\n" + "Banana   39 cents\n" + "Total:    " + total + " cents");
+                }
+                else if(apple == 1 && orange == 1 && banana == 1)
+                {
+                    alert("You have selected:\n" + "Apple    59 cents\n" + "Orange   49 cents\n" + "Banana   39 cents\n" + "Total:    " + total + " cents");
+                }
+                else if(apple == 0 && orange == 0 && banana == 0)
+                {
+                    alert("You have not selected any fruits");
+                }
+            }
+
+            function totalCost()
+            {
+                var total = 0;
+
+                total = (apple * 59 + orange * 49 + banana * 39) * 0.0105;
+
+                alert("Your total cost is $" + total);
+            }
+        </script>
+    </head>
+    <body>
+        <p>
+            <form id = "myForm" action = "">
+            Select fruit(s):<br />
+                <label>
+                    <input type = "checkbox" name = "fruitChk" value = "0.59" id = "apple" onclick = "fruitPrice()"/>
+                    Apple&nbsp&nbsp(59 cents each) 
+                </label><br />
+                <label>
+                    <input type = "checkbox" name = "fruitChk" value = "0.49" id = "orange" onclick = "fruitPrice()"/>
+                    Orange (49 cents each) 
+                </label><br />
+                <label>
+                    <input type = "checkbox" name = "fruitChk" value ="0.39" id = "banana" onclick = "fruitPrice()"/>
+                    Banana (39 cents each)
+                </label><br />
+                <input type = "submit" value = "Submit" id = "submit" />
+            </form>
+        </p>
+        <script type = "text/javascript">
+            document.getElementById("submit").onclick = totalCost;
+        </script>
+    </body>
+</html>

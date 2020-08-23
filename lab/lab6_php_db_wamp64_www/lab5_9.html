@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> lab5_9 </title>
+    </head>
+    <body>
+        <form action = "lab5_10.php" method="POST">
+            <p>
+                User Name: <input type="text" name="txtName" ><br /><br />
+
+                <!--create checkboxes-->
+                <!--name 加中括号：array-->
+                <label><input type="checkbox" name="chkBulb[]" value="2.39" />Four 25-watt light bulbs for $2.39</label><br />
+                <label><input type="checkbox" name="chkBulb[]" value="4.29" />Eight 25-watt light bulbs for $4.29</label><br />
+                <label><input type="checkbox" name="chkBulb[]" value="3.95" />Four 25-watt life-long bulbs for $3.95</label><br />
+                <label><input type="checkbox" name="chkBulb[]" value="7.49" />Eight 25-watt life-long bulbs for $7.49</label><br /><br />
+                
+                <!--create radio buttons-->
+                <label><input type="radio" name="card" value="Visa" checked="checked"/>Visa</label><br />
+                <label><input type="radio" name="card" value="Master" />Master Card</label><br />
+                <label><input type="radio" name="card" value="Discover" />Discover</label><br /><br />
+
+                <input type="submit" name="submit" value="Submit Your Choice" />
+            </p>
+        </form>
+    </body>
+</html>

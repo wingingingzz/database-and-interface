@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<script type = "text/javascript">
+		const names = ["Apple      59 cents", "Orange    49 cents", "Banana    39 cents"];
+		function checkApple(obj) {
+			update(false);
+		}
+
+		function checkOrange(obj) {
+			update(false);
+		}	
+
+		function checkBanana(obj) {
+			update(false);
+		}
+
+		function padding(name, n) {
+			var len = name.length;
+			while (len < n) {
+				name += " ";
+				len++;
+			}
+
+			return name;
+		}
+
+		function update(tax) {
+			var checked = 0;
+			var fruits = document.getElementsByName("fruit");
+			for (var i = 0; i < fruits.length; i++) {
+				if (fruits[i].checked) {
+					checked += 1;
+				}
+			}
+			if (checked == 0) {
+				alert("You have not selected any fruits");
+			} else {
+				var total = 0;
+				var recipe = "You have selected:\n";
+				for (var i = 0; i < fruits.length; i++) {
+					if (fruits[i].checked) {
+						total += Number(fruits[i].value);
+						recipe += names[i] + "\n";
+					}
+				}
+				if (tax) {
+					total *= 1.05;
+				}	
+
+				recipe += "Total".padEnd(12, ' ') + total + " cents\n";
+				alert(recipe);
+			}
+		}
+
+		function onSubmit() {
+			update(true);
+		}
+
+	</script>
+	<title> Exercise 5.3 </title>
+</head>
+<body>
+	<form id = "myForm"/>
+		<label>Select fruit(s):</label> <br>
+		<input type = "checkbox" name = "fruit" value = "59" onclick="checkApple(this)"/>Apple (59 cents each). <br>
+		<input type = "checkbox" name = "fruit" value = "49" onclick="checkOrange(this)"/>Orange (49 cents each). <br>
+		<input type = "checkbox" name = "fruit" value = "39" onclick="checkBanana(this)"/>Banana (39 cents each). <br>
+		<input type="submit" name="submit" onclick="onSubmit()">
+	</form>
+
+</body>

@@ -1,0 +1,377 @@
+<!----------------------------------- Example #1 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My first Event </title>
+
+	</head>
+	<body>
+		<form>
+			<input type = "button" id = "myButton" onclick = "alert('You clicked my button!')"; value = "click" />
+		</form>
+			
+	</body>
+
+</html>
+-->
+
+
+<!----------------------------------- Example #2 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My first Event </title>
+	</head>
+	<body>
+		<form>
+			<input type = "button" id = "myButton" value = "click" />
+			
+		</form>
+		<script type = "text/javascript">
+			function myButtonHandler()
+			{
+				alert('You clicked my button!');
+			}
+
+			document.getElementById("myButton").onclick = myButtonHandler;
+		</script>
+			
+	</body>
+
+</html>
+-->
+
+
+<!----------------------------------- Example #3 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My first Event </title>
+		<script type = "text/javascript" src = "event_js.js"></script>
+	</head>
+	<body>
+		<form>
+			<input type = "button" id = "myButton" value = "click" />
+			
+		</form>
+		<script type = "text/javascript" src = "event_js2.js">
+		</script>
+			
+	</body>
+
+</html>
+-->
+
+
+<!----------------------------------- Example #4 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My first JavaScript </title>
+	</head>
+	<body>
+		<form>
+			<input type = "button" id = "myButton" value = "click" />
+			
+		</form>
+		<script type = "text/javascript" src = "event_js.js">
+		</script>		
+	</body>
+</html>
+-->
+
+
+<!----------------------------------- Example #5 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My first Event </title>
+
+	</head>
+	<body onload="alert('You are visiting my homepage \n' + 'WELCOME!!!');">
+				
+	</body>
+
+</html>
+-->
+
+
+<!----------------------------------- Example #6 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My first Event </title>
+
+		<script type = "text/javascript" src = "event_js.js">
+		</script>
+
+	</head>
+		<body onload="load_greeting();">			
+	</body>
+
+</html>
+-->
+
+
+<!----------------------------------- Example #7 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My Event - onclick </title>
+
+		<script type = "text/javascript" src = "event_js.js">
+		</script>
+
+	</head>
+	<body>
+		<form id = "myForm" action ="">
+			Select age:<br />
+			
+				<input type = "radio" name = "rdoAge" value = "1" 
+					onclick = "ageChoice(1)" />
+			<label> 
+							One year-old.
+			</label>
+
+			<label> 
+				<input type = "radio" name = "rdoAge" value = "2" 
+					onclick = "ageChoice(2)" />
+				Two year-old.
+			</label>
+		</form>
+				
+	</body>
+
+</html>
+-->
+
+
+<!----------------------------------- Example #8 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My Event - onclick </title>
+		<script type = "text/javascript" src = "event_js.js">
+		</script>
+	</head>
+	<body>
+		<form id = "myForm" action ="">
+			Select age:<br />
+			<label> 
+				<input type = "radio" name = "rdoAge" value = "1" />
+				One year-old.
+			</label>
+
+			<label> 
+				<input type = "radio" name = "rdoAge" value = "2" />
+				Two year-old.
+			</label>
+			
+		</form>
+
+		<script type = "text/javascript" src = "event_js2.js">
+		</script>
+				
+	</body>
+
+</html>
+-->
+
+
+<!----------------------------------- Example #9 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My Event - onclick </title>
+		<script type = "text/javascript" src = "event_js.js">
+		</script>
+	</head>
+	<body>
+		<form id = "myForm" action ="">
+			Select age:<br />
+			<label> 
+				<input type = "radio" name = "rdoAge" value = "1" />
+				One year-old.
+			</label>
+
+			<label> 
+				<input type = "radio" name = "rdoAge" value = "2" />
+				Two year-old.
+			</label>
+			
+		</form>
+
+		<script type = "text/javascript" src = "event_js2.js">
+		</script>
+				
+	</body>
+
+</html>
+-->
+
+
+<!----------------------------------- Example #10 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My Event - onclick </title>
+		<script type = "text/javascript" src = "event_js.js">
+		</script>
+	</head>
+	<body>
+		<form id = "myForm" action ="">
+			Select age:<br />
+			<label> 
+				<input type = "radio" name = "rdoAge" value = "1" id = "1"/>
+				One year-old.
+			</label>
+
+			<label> 
+				<input type = "radio" name = "rdoAge" value = "2" id = "2"/>
+				Two year-old.
+			</label>
+			
+		</form>
+
+		<script type = "text/javascript" src = "event_js2.js">
+		</script>
+				
+	</body>
+
+</html>
+-->
+
+
+<!----------------------------------- Example #11 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My Event - onfocus </title>
+
+		<script type = "text/javascript" src = "event_js.js">
+		</script>
+
+	</head>
+	<body>
+		<form id = "myForm" action ="">
+			<label> 
+				First Number:
+				<input type = "text" id = "first" size = "2" />
+			</label>
+
+			<br />+
+			<br />
+
+			<label> 
+				Second Number:
+				<input type = "text" id = "second" size = "2" />
+			</label>
+
+			<br />=
+			<br />
+
+			<input type = "button" value = "Submit" 
+				onclick = "computeCost();"/>
+			<input type = "text" id = "total" size = "5" 
+				 onfocus = "this.blur();"/>
+			
+		</form>				
+	</body>
+
+</html>
+-->
+
+
+<!----------------------------------- Example #12 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My Event - client side validation </title>
+
+		<script type = "text/javascript" src = "event_js.js">
+		</script>
+
+	</head>
+	<body>
+		<form id = "myForm" action ="">
+			<label> 
+				First Message:
+				<input type = "text" id = "first" size = "10" />
+			</label>
+
+			<br />
+
+			<label> 
+				Second Message:
+				<input type = "text" id = "second" size = "10" />
+			</label>
+
+			<br />
+
+			<input type = "submit" name = "Submit" />
+			<input type = "reset" name = "Reset" />
+
+			<script type = "text/javascript" src = "event_js2.js">
+			</script>
+
+			
+		</form>				
+	</body>
+
+</html>
+-->
+
+
+<!----------------------------------- Example #13 ----------------------------------->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My Event - onchange </title>
+
+		<script type = "text/javascript" src = "event_js.js">
+		</script>
+
+	</head>
+	<body>
+		<form id = "myForm" action ="">
+			<label> 
+				Name:
+				<input type = "text" id = "name" size = "10" />
+			</label>
+
+			<br />
+
+			<label> 
+				Number:
+				<input type = "text" id = "number" size = "10" />
+			</label>
+
+			<br />
+
+			<input type = "submit" name = "Submit" />
+			<input type = "reset" name = "Reset" />
+
+			<script type = "text/javascript" src = "event_js2.js">
+			</script>
+
+			
+		</form>				
+	</body>
+
+</html>
+-->
+
+this.blur()
